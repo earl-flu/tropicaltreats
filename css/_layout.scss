@@ -1,0 +1,41 @@
+// Navigation
+.header-container {
+    background-color: $color-green;
+}
+
+
+.navbar {
+    width: 100%;
+
+    a {
+        color: white;
+    }
+}
+
+
+.nav-link {
+
+    &:hover,
+    &.active {
+        color: $color-yellow !important;
+    }
+}
+
+.navbar-brand {
+    font-size: 18px;
+    transition: color 0.3s ease;
+
+    &:hover,
+    &.active {
+        color: $color-yellow !important;
+    }
+}
+
+.by-lucy {
+    font-family: $secondary-font;
+    font-size: 10px;
+    text-transform: uppercase;
+    margin-top: -3px;
+    display: block;
+    font-weight: 500;
+}
