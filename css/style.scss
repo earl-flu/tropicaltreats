@@ -127,14 +127,14 @@ header {
 
 .swiper-button-next,
 .swiper-button-prev {
-    border: 1px solid $color-yellow;
+    border: 1px solid $color-orange;
     padding: 25px;
     font-size: 12px;
     border-radius: 50%;
     bottom: 0 !important;
     top: auto;
     transition: all 0.3s ease;
-    background-color: rgba($color-yellow, 0.05);
+    background-color: rgba($color-orange, 0.05);
 
     &:after {
         font-size: 25px !important;
@@ -143,7 +143,7 @@ header {
     }
 
     &:hover {
-        background-color: $color-yellow;
+        background-color: $color-orange;
 
         &:after {
             color: $color-white;
@@ -162,9 +162,10 @@ header {
     z-index: 10;
 }
 
-.swiper-wrapper{
+.swiper-wrapper {
     padding-bottom: 80px;
 }
+
 .swiper {
     width: 100%;
     // height: 550px;
@@ -200,7 +201,7 @@ header {
     &__description {
         margin-top: 13px;
         font-weight: 500;
-        color: #66666A;
+        color: $color-gray;
     }
 
     &__price {
@@ -223,9 +224,7 @@ header {
     }
 
     &:hover {
-        -webkit-box-shadow: 1px -1px 5px 0px rgba(0, 0, 0, 0.46);
-        -moz-box-shadow: 1px -1px 5px 0px rgba(0, 0, 0, 0.46);
-        box-shadow: 1px -1px 5px 0px rgba(0, 0, 0, 0.46);
+        @include swiper-card-shadow;
         transition: all 0.4s ease;
 
         .swiper-card__overlay {
@@ -236,7 +235,7 @@ header {
     }
 }
 
-.customer-heading{
+.customer-heading {
     text-align: center;
 }
 
@@ -251,6 +250,7 @@ header {
     display: flex;
     flex-direction: column;
     background-color: #FFF7EA;
+    border: 1px solid $color-orange;
 }
 
 .swiper-card-2__review {
@@ -258,13 +258,17 @@ header {
     font-weight: 600;
     // min-height: 190px;
     flex: 1;
+    color: $color-gray;
 }
 
 .swiper-card-2__customer {
-    display: flex;
     align-items: center;
     margin-top: 45px;
-    // justify-content: center;
+    display: flex;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: height 1s ease, opacity 1s ease;
 }
 
 .swiper-card-2__customer-title {
@@ -301,3 +305,41 @@ header {
     font-weight: 500;
 }
 
+.swiper-slide-customer.swiper-slide-active {
+    transition: all 1s ease;
+
+    .swiper-card-2 {
+        border: none;
+        @include swiper-card-shadow;
+    }
+
+    .swiper-card-2__customer {
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+        transition: height 1s ease, opacity 1s ease;
+    }
+
+    .swiper-card-2__review {
+        color: black;
+    }
+}
+
+.swiper-scrollbar-customer {
+    top: 0 !important;
+    bottom: unset !important;
+    background-color: #fff7ea;
+    width: 80% !important;
+    max-width: 500px !important;
+    margin: 0 auto !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+
+    .swiper-scrollbar-drag {
+        background: #fb9300;
+    }
+}
+
+.swiper-customers-say {
+    padding-top: 30px;
+}

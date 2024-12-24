@@ -172,14 +172,14 @@ header nav a {
 
 .swiper-button-next,
 .swiper-button-prev {
-  border: 1px solid #f6b55b;
+  border: 1px solid #FB9300;
   padding: 25px;
   font-size: 12px;
   border-radius: 50%;
   bottom: 0 !important;
   top: auto;
   transition: all 0.3s ease;
-  background-color: rgba(246, 181, 91, 0.05);
+  background-color: rgba(251, 147, 0, 0.05);
 }
 .swiper-button-next:after,
 .swiper-button-prev:after {
@@ -189,7 +189,7 @@ header nav a {
 }
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  background-color: #f6b55b;
+  background-color: #FB9300;
   transition: all 0.3s ease;
 }
 .swiper-button-next:hover:after,
@@ -266,9 +266,9 @@ header nav a {
   transition: all 0.4s ease;
 }
 .swiper-card:hover {
-  -webkit-box-shadow: 1px -1px 5px 0px rgba(0, 0, 0, 0.46);
-  -moz-box-shadow: 1px -1px 5px 0px rgba(0, 0, 0, 0.46);
-  box-shadow: 1px -1px 5px 0px rgba(0, 0, 0, 0.46);
+  -webkit-box-shadow: 1px -1px 5px 0px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 1px -1px 5px 0px rgba(0, 0, 0, 0.8);
+  box-shadow: 1px -1px 5px 0px rgba(0, 0, 0, 0.8);
   transition: all 0.4s ease;
 }
 .swiper-card:hover .swiper-card__overlay {
@@ -296,18 +296,24 @@ header nav a {
   display: flex;
   flex-direction: column;
   background-color: #FFF7EA;
+  border: 1px solid #FB9300;
 }
 
 .swiper-card-2__review {
   font-size: 18px;
   font-weight: 600;
   flex: 1;
+  color: #66666A;
 }
 
 .swiper-card-2__customer {
-  display: flex;
   align-items: center;
   margin-top: 45px;
+  display: flex;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: height 1s ease, opacity 1s ease;
 }
 
 .swiper-card-2__customer-title {
@@ -341,4 +347,41 @@ header nav a {
 .swiper-card-2__customer-tag {
   font-size: 12px;
   font-weight: 500;
+}
+
+.swiper-slide-customer.swiper-slide-active {
+  transition: all 1s ease;
+}
+.swiper-slide-customer.swiper-slide-active .swiper-card-2 {
+  border: none;
+  -webkit-box-shadow: 1px -1px 5px 0px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 1px -1px 5px 0px rgba(0, 0, 0, 0.8);
+  box-shadow: 1px -1px 5px 0px rgba(0, 0, 0, 0.8);
+}
+.swiper-slide-customer.swiper-slide-active .swiper-card-2__customer {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  transition: height 1s ease, opacity 1s ease;
+}
+.swiper-slide-customer.swiper-slide-active .swiper-card-2__review {
+  color: black;
+}
+
+.swiper-scrollbar-customer {
+  top: 0 !important;
+  bottom: unset !important;
+  background-color: #fff7ea;
+  width: 80% !important;
+  max-width: 500px !important;
+  margin: 0 auto !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+.swiper-scrollbar-customer .swiper-scrollbar-drag {
+  background: #fb9300;
+}
+
+.swiper-customers-say {
+  padding-top: 30px;
 }/*# sourceMappingURL=style.css.map */
