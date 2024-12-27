@@ -58,7 +58,7 @@ header {
         max-width: 90%;
         left: 50%;
         transform: translateX(-50%);
-        padding-left: 12px;
+        // padding-left: 12px;
         // border: 1px solid yellow;
     }
 
@@ -68,19 +68,29 @@ header {
         // margin-top: -20px;
         // word-spacing: 56px;
         // letter-spacing: 34px;
-        margin-top: 0px;
-        word-spacing: 27px;
-        letter-spacing: 10px;
+        margin-top: 3px;
+        // word-spacing: clamp(10px,2vw, 113px);
+        // letter-spacing: clamp(10px,3.6vw, 24px);
         font-weight: 600;
+        display: flex;
+        justify-content: space-between;
 
-        .last {
+        >*:nth-child(2) {
+            text-align: center;
+        }
+
+        >*:nth-child(3) {
+            text-align: right;
+        }
+
+        span {
             letter-spacing: 0px;
         }
     }
 
     .description {
-        font-size: 18px;
-        margin-top: 39px;
+        font-size: clamp(16px, 5vw, 18px);
+        margin-top: 35px;
     }
 
     .tt {
@@ -122,6 +132,11 @@ header {
 .section {
     @include full-screen;
     margin-top: 100px;
+    position: relative;
+}
+
+.customer-say-section {
+    margin-top: 200px;
 }
 
 
@@ -249,21 +264,19 @@ header {
     height: auto;
     display: flex;
     flex-direction: column;
-    background-color: #FFF7EA;
     border: 1px solid $color-orange;
+    background-color: #ffffff;
 }
 
 .swiper-card-2__review {
     font-size: 18px;
     font-weight: 600;
-    // min-height: 190px;
     flex: 1;
     color: $color-gray;
 }
 
 .swiper-card-2__customer {
     align-items: center;
-    margin-top: 45px;
     display: flex;
     height: 0;
     opacity: 0;
@@ -306,10 +319,9 @@ header {
 }
 
 .swiper-slide-customer.swiper-slide-active {
-    transition: all 1s ease;
-
     .swiper-card-2 {
         border: none;
+        background-color: #FFF7EA;
         @include swiper-card-shadow;
     }
 
@@ -318,6 +330,7 @@ header {
         opacity: 1;
         height: auto;
         transition: height 1s ease, opacity 1s ease;
+        margin-top: 45px;
     }
 
     .swiper-card-2__review {
@@ -342,4 +355,19 @@ header {
 
 .swiper-customers-say {
     padding-top: 30px;
+}
+
+.customer-say-bg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -80px;
+    left: 0;
+    z-index: -1;
+}
+
+.customer-say-bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

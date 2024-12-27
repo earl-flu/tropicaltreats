@@ -39,3 +39,54 @@
     display: block;
     font-weight: 500;
 }
+
+footer {
+    margin-top: 200px;
+    background-color: $color-green;
+    color: #ffffff;
+    padding: 100px 0;
+    overflow: hidden;
+    border-top-left-radius: 150px;
+    text-align: center;
+}
+
+.footer-title {
+    font-family: $primary-font;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.footer-tropical-treats {
+    text-align: center;
+    font-size: 30px;
+    font-family: $primary-font;
+
+    p{
+        font-size: 24px;
+        margin-top: 15px;
+        opacity: 0.9;
+        line-height: 120%;
+    }
+}
+
+.map-div{
+    margin-top: 15px;
+}
+
+.footer-time{
+    font-weight: 600;
+}
+
+.tel-no{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.footer-icon{
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.footer-row>*{
+    margin-top: 60px;
+}

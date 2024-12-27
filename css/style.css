@@ -25,7 +25,7 @@ h6 {
 
 .title-1 {
   font-family: "Bangers", system-ui;
-  font-size: clamp(45px, 25vw, 98px);
+  font-size: clamp(45px, 25.5vw, 98px);
   letter-spacing: 2px;
   line-height: 100%;
 }
@@ -69,6 +69,56 @@ h6 {
   margin-top: -3px;
   display: block;
   font-weight: 500;
+}
+
+footer {
+  margin-top: 200px;
+  background-color: #3F9065;
+  color: #ffffff;
+  padding: 100px 0;
+  overflow: hidden;
+  border-top-left-radius: 150px;
+  text-align: center;
+}
+
+.footer-title {
+  font-family: "Bangers", system-ui;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.footer-tropical-treats {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Bangers", system-ui;
+}
+.footer-tropical-treats p {
+  font-size: 24px;
+  margin-top: 15px;
+  opacity: 0.9;
+  line-height: 120%;
+}
+
+.map-div {
+  margin-top: 15px;
+}
+
+.footer-time {
+  font-weight: 600;
+}
+
+.tel-no {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.footer-icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.footer-row > * {
+  margin-top: 60px;
 }
 
 header {
@@ -116,22 +166,27 @@ header nav a {
   max-width: 90%;
   left: 50%;
   transform: translateX(-50%);
-  padding-left: 12px;
 }
 .hero-section .texas {
   font-size: 18px;
   text-transform: uppercase;
-  margin-top: 0px;
-  word-spacing: 27px;
-  letter-spacing: 10px;
+  margin-top: 3px;
   font-weight: 600;
+  display: flex;
+  justify-content: space-between;
 }
-.hero-section .texas .last {
+.hero-section .texas > *:nth-child(2) {
+  text-align: center;
+}
+.hero-section .texas > *:nth-child(3) {
+  text-align: right;
+}
+.hero-section .texas span {
   letter-spacing: 0px;
 }
 .hero-section .description {
-  font-size: 18px;
-  margin-top: 39px;
+  font-size: clamp(16px, 5vw, 18px);
+  margin-top: 35px;
 }
 .hero-section .tt {
   color: #f6b55b;
@@ -168,6 +223,11 @@ header nav a {
   height: 100vh;
   max-width: 100%;
   margin-top: 100px;
+  position: relative;
+}
+
+.customer-say-section {
+  margin-top: 200px;
 }
 
 .swiper-button-next,
@@ -295,8 +355,8 @@ header nav a {
   height: auto;
   display: flex;
   flex-direction: column;
-  background-color: #FFF7EA;
   border: 1px solid #FB9300;
+  background-color: #ffffff;
 }
 
 .swiper-card-2__review {
@@ -308,7 +368,6 @@ header nav a {
 
 .swiper-card-2__customer {
   align-items: center;
-  margin-top: 45px;
   display: flex;
   height: 0;
   opacity: 0;
@@ -349,11 +408,9 @@ header nav a {
   font-weight: 500;
 }
 
-.swiper-slide-customer.swiper-slide-active {
-  transition: all 1s ease;
-}
 .swiper-slide-customer.swiper-slide-active .swiper-card-2 {
   border: none;
+  background-color: #FFF7EA;
   -webkit-box-shadow: 1px -1px 5px 0px rgba(0, 0, 0, 0.8);
   -moz-box-shadow: 1px -1px 5px 0px rgba(0, 0, 0, 0.8);
   box-shadow: 1px -1px 5px 0px rgba(0, 0, 0, 0.8);
@@ -363,6 +420,7 @@ header nav a {
   opacity: 1;
   height: auto;
   transition: height 1s ease, opacity 1s ease;
+  margin-top: 45px;
 }
 .swiper-slide-customer.swiper-slide-active .swiper-card-2__review {
   color: black;
@@ -384,4 +442,19 @@ header nav a {
 
 .swiper-customers-say {
   padding-top: 30px;
+}
+
+.customer-say-bg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -80px;
+  left: 0;
+  z-index: -1;
+}
+
+.customer-say-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }/*# sourceMappingURL=style.css.map */
