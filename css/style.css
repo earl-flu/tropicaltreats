@@ -23,14 +23,6 @@ h6 {
   margin: 0;
 }
 
-.main-title {
-  font-family: "Bangers", system-ui;
-  font-size: clamp(45px, 25.5vw, 98px);
-  letter-spacing: 2px;
-  line-height: 100%;
-  text-align: center;
-}
-
 .title-2 {
   font-family: "Bangers", system-ui;
   font-size: 78px;
@@ -150,68 +142,26 @@ header nav a {
 }
 
 .hero-section {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  max-width: 100%;
-  background-color: #3F9065;
-  color: #ffffff;
-  overflow: hidden;
-}
-.hero-section .content {
-  position: absolute;
-  top: 5%;
-  width: 1320px;
-  max-width: 90%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.hero-section .texas {
-  margin-top: 3px;
-  font-size: 17px;
-  display: flex;
-  justify-content: space-between;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 8px;
-}
-.hero-section .btn-container {
+  min-height: 100vh;
+  border: 1px solid red;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-.hero-section .description {
-  font-size: clamp(16px, 5vw, 18px);
-  margin-top: 35px;
-  text-align: justify;
+.hero-section .hero-title {
+  font-family: "Bangers", system-ui;
+  font-size: 80px;
+  line-height: 110%;
 }
-.hero-section .tt {
-  color: #f6b55b;
-  font-weight: 500;
-}
-.hero-section .learn-more-btn {
-  padding: 15px 24px;
-  border: 2px solid #ffffff;
-  display: inline-block;
-  cursor: pointer;
-  font-size: 12px;
-  text-transform: uppercase;
+.hero-section .hero-texas {
   font-weight: 600;
-  transition: all 0.3s ease;
-  margin-top: 34px;
-  width: 100%;
-  text-align: center;
 }
-.hero-section .learn-more-btn:hover {
-  background-color: #FB9300;
-  border: 2px solid #FB9300;
+.hero-section .hero-desc {
+  margin-top: 10px;
 }
-.hero-section .pizza {
-  position: absolute;
-  right: -70px;
-  bottom: -100px;
-  max-width: 300px;
+.hero-section .row div {
+  border: 1px solid red;
+  padding: 30px;
 }
 
 .header-container {
