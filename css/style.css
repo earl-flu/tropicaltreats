@@ -65,7 +65,7 @@ h6 {
 }
 
 footer {
-  margin-top: 200px;
+  margin-top: 150px;
   background-color: #3F9065;
   color: #ffffff;
   padding: 100px 0;
@@ -143,25 +143,48 @@ header nav a {
 
 .hero-section {
   min-height: 100vh;
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.hero-section .treats {
+  font-weight: 500;
 }
 .hero-section .hero-title {
   font-family: "Bangers", system-ui;
   font-size: 80px;
   line-height: 110%;
 }
+.hero-section .hero-image {
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+}
 .hero-section .hero-texas {
   font-weight: 600;
+  font-size: 18px;
 }
 .hero-section .hero-desc {
-  margin-top: 10px;
+  margin-top: 15px;
 }
-.hero-section .row div {
-  border: 1px solid red;
+.hero-section .row > div {
   padding: 30px;
+}
+.hero-section .btn-best-seller {
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  background-color: #FB9300;
+  margin-top: 15px;
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  transition: background-color 0.3s;
+}
+.hero-section .btn-best-seller:hover {
+  background-color: rgba(251, 147, 0, 0.75);
 }
 
 .header-container {
@@ -169,17 +192,20 @@ header nav a {
 }
 
 .section {
-  width: 100vw;
-  height: 100vh;
-  max-width: 100%;
-  margin-top: 100px;
+  margin-top: 150px;
   position: relative;
 }
 
-.customer-say-section {
-  margin-top: 200px;
+@media (min-width: 1024px) {
+  .section {
+    width: 100vw;
+    min-height: 100vh;
+    max-width: 100%;
+  }
+  .customer-say-section {
+    margin-top: 200px;
+  }
 }
-
 .swiper-button-next,
 .swiper-button-prev {
   border: 1px solid #FB9300;

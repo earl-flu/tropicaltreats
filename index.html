@@ -59,46 +59,29 @@
     </div>
 
     <!-- Hero Section -->
-    <!-- <section class="hero-section">
-        <div class="content">
-            <div style="max-width: 80%; z-index:10; position:relative; margin: auto;">
-                <p class="main-title"><span>Taste </span>of<span> </span>Paradise<span></span></p>
-                <div class="texas">
-                    <div>In</div>
-                    <div>West</div>
-                    <div>Texas</div>
-                </div>
-                <p class="description">Experience the vibrant taste of the Philippines with <span class="tt">Tropical
-                        Treats</span>. From savory
-                    classics like adobo to
-                    sweet delights like halo-halo, our dishes celebrate Filipino tradition, bold spices, and tropical
-                    flavors. Savor the warmth of Filipino hospitality in every bite!</p>
-                <div class="btn-container">
-                    <div class="learn-more-btn">Best Seller</div>
-                </div>
-            </div>
-            <img class="pizza" src="./images/pizza.png" alt="">
-        </div>
-    </section> -->
-
     <section>
         <div class="container hero-section">
             <div class="row">
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center order-lg-2">
+                    <img class="hero-image" src="./images/filipino-food.png" alt="tropical-treats-food">
+                </div>
+                <div class="col-12 col-lg-6 order-lg-1">
                     <p class="hero-title">Taste of Paradise</p>
                     <p class="hero-texas">In West Texas</p>
-                    <p class="hero-desc">Experience the vibrant taste of the Philippines with <span class="tt">Tropical
+                    <p class="hero-desc">Experience the vibrant taste of the Philippines with <span
+                            class="treats">Tropical
                             Treats</span>. From savory
                         classics like adobo to
                         sweet delights like halo-halo, our dishes celebrate Filipino tradition, bold spices, and
                         tropical
                         flavors. Savor the warmth of Filipino hospitality in every bite!</p>
+                    <a href="">
+                        <div class="btn-best-seller">
+                            Order Now
+                        </div>
+                    </a>
                 </div>
-                <div class="col-12 col-lg-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto est magni
-                    saepe magnam
-                    eligendi optio quia ut rem excepturi iste odit expedita impedit nihil suscipit blanditiis reiciendis
-                    architecto iure omnis aspernatur, incidunt debitis. Aperiam esse laboriosam beatae temporibus, ipsum
-                    incidunt harum eaque alias quis explicabo eius veritatis ea qui earum.</div>
+
             </div>
         </div>
     </section>
@@ -190,6 +173,14 @@
     <script>
         const swiper = new Swiper('.swiper', {
             slidesPerView: 1,
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
             spaceBetween: 30,
             freeMode: true,
             navigation: {
@@ -366,6 +357,14 @@
     <script>
         const swiper2 = new Swiper('.swiper-customers-say', {
             slidesPerView: 1,
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
             spaceBetween: 30,
             freeMode: true,
             navigation: {

@@ -41,10 +41,14 @@ header {
 
 .hero-section {
     min-height: 100vh;
-    border: 1px solid red;
+    // border: 1px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .treats {
+        font-weight: 500;
+    }
 
     .hero-title {
         font-family: $primary-font;
@@ -52,18 +56,43 @@ header {
         line-height: 110%;
     }
 
-    .hero-texas{
-        font-weight: 600;
+    .hero-image {
+        width: 100%;
+        max-width: 500px;
+        position: relative;
     }
 
-    .hero-desc{
-        margin-top: 10px;
+    .hero-texas {
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .hero-desc {
+        margin-top: 15px;
     }
 
     .row {
-        div {
-            border: 1px solid red;
+        >div {
             padding: 30px;
+        }
+    }
+
+    .btn-best-seller {
+        padding: 10px 15px;
+        font-size: 14px;
+        font-weight: 600;
+        color: white;
+        text-transform: uppercase;
+        background-color: $color-orange;
+        margin-top: 15px;
+        display: inline-block;
+        border-radius: 10px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: rgba($color-orange, 0.75);
+
         }
     }
 }
@@ -76,14 +105,23 @@ header {
 }
 
 .section {
-    @include full-screen;
-    margin-top: 100px;
+    margin-top: 150px;
     position: relative;
 }
 
-.customer-say-section {
-    margin-top: 200px;
+@media (min-width: 1024px) {
+    .section {
+        @include full-screen;
+    }
+
+    .customer-say-section {
+        margin-top: 200px;
+    }
+
 }
+
+
+
 
 
 .swiper-button-next,
