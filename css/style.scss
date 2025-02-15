@@ -109,21 +109,6 @@ header {
     position: relative;
 }
 
-@media (min-width: 1024px) {
-    .section {
-        @include full-screen;
-    }
-
-    .customer-say-section {
-        margin-top: 200px;
-    }
-
-}
-
-
-
-
-
 .swiper-button-next,
 .swiper-button-prev {
     border: 1px solid $color-orange;
@@ -167,14 +152,12 @@ header {
 
 .swiper {
     width: 100%;
-    // height: 550px;
     margin-top: 38px;
     padding: 10px;
 }
 
 .swiper-slide {
     width: 100%;
-    // height: 465px;
 }
 
 .swiper-card {
@@ -412,10 +395,13 @@ header {
 .menu-filter {
     font-weight: 600;
     text-transform: uppercase;
-    padding: 6px 10px;
+    padding: 8px 13px;
     border: 1px solid rgb(212, 212, 212);
     color: black;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
 
     i {
         margin-right: 3px;
@@ -430,7 +416,6 @@ header {
         font-weight: 500;
     }
 
-    border: 1px solid red;
 }
 
 .menu__img-div {
@@ -464,6 +449,10 @@ header {
     margin-bottom: 15px;
 }
 
+.menu-filter-lg {
+    margin-top: 66px;
+}
+
 #offcanvasMenuCategoryLabel {
     font-size: 28px;
 }
@@ -472,6 +461,7 @@ header {
     a {
         color: black;
         font-weight: 600;
+        transition: 0.2s;
 
         &:hover {
             color: $color-orange;
@@ -492,6 +482,36 @@ header {
     border-bottom: 1px solid rgb(223, 221, 221);
 }
 
+.accordion-text {
+    font-size: 28px !important;
+    color: #000000 !important;
+    background-color: transparent !important;
+}
+
+.menu-accordion-list {
+    margin-top: 15px;
+    padding: 0;
+
+    a {
+        color: black;
+        font-weight: 600;
+        transition: 0.2s;
+
+        &:hover {
+            color: $color-orange;
+        }
+    }
+
+    ul {
+        margin-top: 20px;
+    }
+
+    li {
+        margin-bottom: 15px;
+        list-style-type: none;
+    }
+}
+
 @media (min-width: 768px) {
     .menu__img-div {
         width: 280px;
@@ -507,10 +527,40 @@ header {
     .menu__desc-div {
         text-align: left;
     }
+
     .menu-category {
         font-size: 90px;
     }
+
     .menu-hero {
         height: 300px;
+    }
+
+    .menu__card-title {
+        font-size: 32px;
+    }
+
+    .menu__ingredient {
+        margin-bottom: 20px;
+    }
+
+}
+
+
+@media (min-width: 1024px) {
+    .section {
+        @include full-screen;
+    }
+
+    .customer-say-section {
+        margin-top: 200px;
+    }
+
+}
+
+
+@media (min-width: 1200px) {
+    .menu-hero {
+        height: 400px;
     }
 }

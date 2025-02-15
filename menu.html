@@ -78,41 +78,78 @@
 
     <div class="container menu-container">
         <div class="row">
-            <div class="col-12">
-                <a class="menu-filter" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenuCategory"
-                    aria-controls="offcanvasMenuCategory">
-                    <i class="bi bi-filter"></i>
-                    Filter
-                </a>
-
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenuCategory"
-                    aria-labelledby="offcanvasMenuCategoryLabel">
-                    <div class="offcanvas-header offcanvas-header-menu">
-                        <h5 class="offcanvas-title" id="offcanvasMenuCategoryLabel">Categories</h5>
-                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
+            <div class="col-12 col-lg-4 px-3">
+                <!-- FILTER CATEGORY FOR SMALL SCREEN -->
+                <div class="d-lg-none">
+                    <div class="menu-filter" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenuCategory"
+                        aria-controls="offcanvasMenuCategory">
+                        <i class="bi bi-filter"></i>
+                        Filter
                     </div>
-                    <div class="offcanvas-body menu-category-list">
-                        <div>
-                            <ul>
-                                <li>
-                                    <a href="#">Burger</a>
-                                </li>
-                                <li>
-                                    <a href="#">Pasta</a>
-                                </li>
-                                <li>
-                                    <a href="#">Fries</a>
-                                </li>
-                                <li>
-                                    <a href="#">Hot Drinks</a>
-                                </li>
-                            </ul>
+
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenuCategory"
+                        aria-labelledby="offcanvasMenuCategoryLabel">
+                        <div class="offcanvas-header offcanvas-header-menu">
+                            <h5 class="offcanvas-title" id="offcanvasMenuCategoryLabel">Categories</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body menu-category-list">
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a href="#">Burger</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Pasta</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Fries</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Hot Drinks</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- //FILTER CATEGORY FOR SMALL SCREEN -->
+                <!-- FILTER CATEGORY FOR LARGE SCREEN -->
+                <div class="d-none d-lg-block menu-filter-lg">
+                    <div class="accordion" id="menuCategoryAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button accordion-text" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Categories
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#menuCategoryAccordion">
+                                <div class="accordion-body">
+                                    <ul class="menu-accordion-list">
+                                        <li>
+                                            <a href="#">Burger</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pasta</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Fries</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Hot Drinks</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //FILTER CATEGORY FOR LARGE SCREEN -->
             </div>
-            <div class="col-12 p-3">
+            <div class="col-12 col-lg-8 p-3">
                 <div class="menu__card">
                     <div class="menu__img-div">
                         <img src="./images/product-7-1-460x460.png" alt="">
@@ -120,9 +157,11 @@
                     <div class="menu__desc-div">
                         <h3 class="menu__card-title">Aerodynamic Small1103 Hat</h3>
                         <p class="menu__price">$50.00</p>
-                        <p class="menu__ingredient">Pepper Mayo Cruncher + Fries + Coleslaw + 1 Pc Chicken + Drink</p>
+                        <p class="menu__ingredient">Pepper Mayo Cruncher + Fries + Coleslaw + 1 Pc Chicken + Drink
+                        </p>
                         <p>
-                            The mouth-watering aroma of sizzling burgers now fills the streets of Birmingham thanks to
+                            The mouth-watering aroma of sizzling burgers now fills the streets of Birmingham thanks
+                            to
                             the passionate pursuit of three brothers
                         </p>
                     </div>
@@ -134,9 +173,11 @@
                     <div class="menu__desc-div">
                         <h3 class="menu__card-title">Aerodynamic Small1103 Hat</h3>
                         <p class="menu__price">$50.00</p>
-                        <p class="menu__ingredient">Pepper Mayo Cruncher + Fries + Coleslaw + 1 Pc Chicken + Drink</p>
+                        <p class="menu__ingredient">Pepper Mayo Cruncher + Fries + Coleslaw + 1 Pc Chicken + Drink
+                        </p>
                         <p>
-                            The mouth-watering aroma of sizzling burgers now fills the streets of Birmingham thanks to
+                            The mouth-watering aroma of sizzling burgers now fills the streets of Birmingham thanks
+                            to
                             the passionate pursuit of three brothers
                         </p>
                     </div>
@@ -148,9 +189,11 @@
                     <div class="menu__desc-div">
                         <h3 class="menu__card-title">Aerodynamic Small1103 Hat</h3>
                         <p class="menu__price">$50.00</p>
-                        <p class="menu__ingredient">Pepper Mayo Cruncher + Fries + Coleslaw + 1 Pc Chicken + Drink</p>
+                        <p class="menu__ingredient">Pepper Mayo Cruncher + Fries + Coleslaw + 1 Pc Chicken + Drink
+                        </p>
                         <p>
-                            The mouth-watering aroma of sizzling burgers now fills the streets of Birmingham thanks to
+                            The mouth-watering aroma of sizzling burgers now fills the streets of Birmingham thanks
+                            to
                             the passionate pursuit of three brothers
                         </p>
                     </div>
@@ -186,7 +229,8 @@
                                 456-0789</a>
                         </p>
                         <p class="mt-1 text-break"><i class="bi bi-facebook footer-icon"></i> <a
-                                href="https://www.facebook.com/sweetsunlimited.bylucy">sweetsunlimited.bylucy</a></p>
+                                href="https://www.facebook.com/sweetsunlimited.bylucy">sweetsunlimited.bylucy</a>
+                        </p>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg">

@@ -221,16 +221,6 @@ header nav a {
   position: relative;
 }
 
-@media (min-width: 1024px) {
-  .section {
-    width: 100vw;
-    min-height: 100vh;
-    max-width: 100%;
-  }
-  .customer-say-section {
-    margin-top: 200px;
-  }
-}
 .swiper-button-next,
 .swiper-button-prev {
   border: 1px solid #FB9300;
@@ -511,10 +501,13 @@ header nav a {
 .menu-filter {
   font-weight: 600;
   text-transform: uppercase;
-  padding: 6px 10px;
+  padding: 8px 13px;
   border: 1px solid rgb(212, 212, 212);
   color: black;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
 }
 .menu-filter i {
   margin-right: 3px;
@@ -522,7 +515,6 @@ header nav a {
 
 .menu__card {
   margin-top: 50px;
-  border: 1px solid red;
 }
 .menu__card p {
   color: #333338;
@@ -559,6 +551,10 @@ header nav a {
   margin-bottom: 15px;
 }
 
+.menu-filter-lg {
+  margin-top: 66px;
+}
+
 #offcanvasMenuCategoryLabel {
   font-size: 28px;
 }
@@ -566,6 +562,7 @@ header nav a {
 .menu-category-list a {
   color: black;
   font-weight: 600;
+  transition: 0.2s;
 }
 .menu-category-list a:hover {
   color: #FB9300;
@@ -580,6 +577,32 @@ header nav a {
 
 .offcanvas-header-menu {
   border-bottom: 1px solid rgb(223, 221, 221);
+}
+
+.accordion-text {
+  font-size: 28px !important;
+  color: #000000 !important;
+  background-color: transparent !important;
+}
+
+.menu-accordion-list {
+  margin-top: 15px;
+  padding: 0;
+}
+.menu-accordion-list a {
+  color: black;
+  font-weight: 600;
+  transition: 0.2s;
+}
+.menu-accordion-list a:hover {
+  color: #FB9300;
+}
+.menu-accordion-list ul {
+  margin-top: 20px;
+}
+.menu-accordion-list li {
+  margin-bottom: 15px;
+  list-style-type: none;
 }
 
 @media (min-width: 768px) {
@@ -600,5 +623,26 @@ header nav a {
   }
   .menu-hero {
     height: 300px;
+  }
+  .menu__card-title {
+    font-size: 32px;
+  }
+  .menu__ingredient {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .section {
+    width: 100vw;
+    min-height: 100vh;
+    max-width: 100%;
+  }
+  .customer-say-section {
+    margin-top: 200px;
+  }
+}
+@media (min-width: 1200px) {
+  .menu-hero {
+    height: 400px;
   }
 }/*# sourceMappingURL=style.css.map */
