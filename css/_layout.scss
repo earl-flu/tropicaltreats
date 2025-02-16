@@ -13,12 +13,39 @@
 }
 
 
-.nav-link {
-
-    &:hover,
-    &.active {
-        color: $color-yellow !important;
+.nav-item {
+    &.current-menu-item {
+        a {
+            color: $color-yellow !important;
+        }
     }
+
+    a {
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: $color-yellow !important;
+        }
+
+    }
+}
+
+.treats-nav {
+    padding-top: 26px;
+    li {
+        margin-bottom: 11px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .treats-nav {
+        padding-top: 0px;
+        li {
+            margin-bottom: 0;
+        }
+    }
+
 }
 
 .navbar-brand {
@@ -109,6 +136,7 @@ footer {
         border-top-left-radius: 120px;
         padding: 100px 0;
     }
+
     .footer-desc {
         margin-top: 0;
     }

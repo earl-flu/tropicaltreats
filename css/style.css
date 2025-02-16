@@ -43,10 +43,31 @@ h6 {
   color: white;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-item.current-menu-item a {
+  color: #f6b55b !important;
+}
+.nav-item a {
+  transition: color 0.3s ease;
+}
+.nav-item a:hover {
   color: #f6b55b !important;
 }
 
+.treats-nav {
+  padding-top: 26px;
+}
+.treats-nav li {
+  margin-bottom: 11px;
+}
+
+@media (min-width: 992px) {
+  .treats-nav {
+    padding-top: 0px;
+  }
+  .treats-nav li {
+    margin-bottom: 0;
+  }
+}
 .navbar-brand {
   font-size: 24px;
   transition: color 0.3s ease;
