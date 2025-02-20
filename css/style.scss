@@ -158,6 +158,7 @@ header {
 
 .swiper-slide {
     width: 100%;
+    height: auto;
 }
 
 .swiper-card {
@@ -453,6 +454,14 @@ header {
     margin-top: 66px;
 }
 
+.menu-accordion-list {
+    li {
+        a.active {
+            color: $color-orange;
+        }
+    }
+}
+
 #offcanvasMenuCategoryLabel {
     font-size: 28px;
 }
@@ -486,6 +495,12 @@ header {
     font-size: 28px !important;
     color: #000000 !important;
     background-color: transparent !important;
+}
+
+.current-menu-item {
+    a {
+        color: $color-yellow;
+    }
 }
 
 .menu-accordion-list {
